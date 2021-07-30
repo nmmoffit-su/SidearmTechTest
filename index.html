@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Moffitt Tech Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<h1 class="hidden-title">Nick Moffitt Tech Test</h1>
+
+<body>
+    <nav>
+        <h2 class="hidden-title">Navigation Bar</h2>
+        <div class="navbar-container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list"
+                aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation"
+                onclick="displayMenu(event)">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="brand">
+                <a href="#">
+                    <img class="logo" src="./assets/placeholder.png" alt="Placeholder Logo" />
+                </a>
+            </div>
+            <div class="show" id="navbar-list" role="navigation" aria-label="Main">
+                <ul class="nav-links">
+                    <li class="nav-item"> <a class="active-link" href="#">Ipsum</a></li>
+                    <li class="nav-item"> <a href="#">Ipsum</a></li>
+                    <li class="nav-item"> <a href="#">Ipsum</a></li>
+                    <li class="nav-item"> <a href="#">Ipsum</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-bar-buttons">
+            <div class="dropdown">
+                <img src="./assets/placeholder-user.png" alt="Placeholder Profile Picture">
+                <button class="drop-button">Ipsum<span class="lorem">&nbsp;Lorem</span></button>
+                <ul class="dropdown-content" aria-label="Hover Dropdown">
+                    <li><a class="user" href="#">Ipsum Lorem</a></li>
+                    <li><a class="cart" href="#">Ipsum Lorem</a></li>
+                </ul>
+            </div>
+            <button class="nav-button"><a href="#">Ipsum Lorem</a></button>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="section-header">
+                <h2>Officia Ut</h2>
+                <a href="#">Ipsum Lorem</a>
+            </div>
+            <div class="section-container">
+                <div class="top row">
+                    <div class="section-item">
+                        <img src="./assets/default.png" alt="Mountain Landscape">
+                        <div class="item-content">
+                            <div class="byline">Adipisicing unde vel so dolore, consequatur.</div>
+                            <button class="item-link"><a href="#">Ipsum Lorem</a></button>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img src="./assets/default.png" alt="Mountain Landscape">
+                        <div class="item-content">
+                            <div class="byline">Adipisicing unde vel so dolore, consequatur.</div>
+                            <button class="item-link"><a href="#">Ipsum Lorem</a></button>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img src="./assets/default.png" alt="Mountain Landscape">
+                        <div class="item-content">
+                            <div class="byline">Adipisicing unde vel so dolore, consequatur.</div>
+                            <button class="item-link"><a href="#">Ipsum Lorem</a></button>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img src="./assets/default.png" alt="Mountain Landscape">
+                        <div class="item-content">
+                            <div class="byline">Adipisicing unde vel so dolore, consequatur.</div>
+                            <button class="item-link"><a href="#">Ipsum Lorem</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom row">
+                    <div class="section-item">
+                        <img src="./assets/default.png" alt="Mountain Landscape">
+                        <div class="item-content">
+                            <div class="byline">Adipisicing unde vel so dolore, consequatur.</div>
+                            <button class="item-link"><a href="#">Ipsum Lorem</a></button>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img src="./assets/default.png" alt="Mountain Landscape">
+                        <div class="item-content">
+                            <div class="byline">Adipisicing unde vel so dolore, consequatur.</div>
+                            <button class="item-link"><a href="#">Ipsum Lorem</a></button>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img src="./assets/default.png" alt="Mountain Landscape">
+                        <div class="item-content">
+                            <div class="byline">Adipisicing unde vel so dolore, consequatur.</div>
+                            <button class="item-link"><a href="#">Ipsum Lorem</a></button>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img src="./assets/default.png" alt="Mountain Landscape">
+                        <div class="item-content">
+                            <div class="byline">Adipisicing unde vel so dolore, consequatur.</div>
+                            <button class="item-link"><a href="#">Ipsum Lorem</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+
+<script>
+
+    // Hide and show navigation on click (Mobile)
+
+    function displayMenu(event) {
+        if (document.getElementById("navbar-list").classList.contains("show")) {
+            document.getElementById("navbar-list").classList.remove("show")
+        }
+        else {
+            document.getElementById("navbar-list").classList.add("show")
+        }
+    }
+
+</script>

@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,700&display=swap');
+
+:root {
+    --blue : #003057;
+    --white: #f9f9f9;
+    --gray: #666666;
+    --lightgray: #f1f1f1;
+    --darkgray: #262628;
+}
+
+.hidden-title {
+  display: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: #f9f9f9;
+}
+
+/* Navigation*/
+
+nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 48px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler{
+  display: none;
+  margin: 29px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 42px;
+  cursor: pointer;
+}
+
+
+.navbar-toggler::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c9";
+}
+
+.brand .logo {
+    width: 160px;
+    height: 72px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin:  0 0 0 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 1.12rem;
+    line-height: 27px;
+    padding: 25px;
+    transition: .5s;
+}
+
+.nav-links a:hover{
+  color: var(--blue);
+  box-shadow: inset 0px -4px 0px #003057;
+}
+
+.nav-links .active-link {
+    color: var(--blue);
+    box-shadow: inset 0px -4px 0px #003057;
+}
+
+.nav-links li{
+    list-style-type: none;
+    font-weight: 700;
+    margin-left: 24px;
+}
+
+/* Navbar Dropdown */
+
+.nav-bar-buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .dropdown img {
+    height: 20px;
+    width: 20px;
+    display: block;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .dropdown-content {
+    overflow: hidden;
+    position: absolute;
+    top: 72px;
+    height: 0;
+    right: 0;
+    background-color: #f9f9f9;
+    font-size: 1.12rem;
+    margin: 0 5px 0 0;
+    list-style-type: none;
+    padding: 0;
+    transition: all .5s ease-in;
+  }
+
+  .drop-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.12rem;
+    padding: 22.5px 24px 22.5px 0;
+    margin-right: 5px;
+    line-height: 27px;
+    background-color: transparent;
+    border: none;
+    color: var(--darkgray);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .drop-button::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0dd";
+    margin: 0 10px;
+  }
+
+  .dropdown-content li {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 210px;
+  }
+
+  .dropdown-content li a {
+    color: #000;
+    text-decoration: none;
+    padding: 16px 27px;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  .user::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    margin-right: 10px;
+  }
+
+  .cart::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f07a";
+    margin-right: 10px;
+  }
+  
+  .dropdown-content a:hover {background-color: var(--lightgray)}
+  
+  .dropdown:hover .dropdown-content {
+    height: 106px;
+  }
+
+  /* Navbar Button */
+
+  .nav-button a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f1ea";
+    margin-right: 10px;
+  }
+
+  .nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    
+  }
+
+  .nav-button a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.12rem;
+    line-height: 27px;
+    background-color: var(--blue);
+    text-decoration: none;
+    padding: 22.5px 24px;
+    color: #fff;
+  }
+
+
+  /* Section 4 */
+
+  section {
+    margin: 24px 0;
+    background-color: #fff;
+    padding: 24px;
+  }
+
+  h2 {
+      color: var(--darkgray);
+      font-weight: 900;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+  }
+
+  .section-header a{
+      color: var(--blue);
+  }
+
+  .row {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .row:first-of-type {
+      margin-bottom: 24px;
+  }
+
+  .section-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    padding: 24px;
+    margin-right: 24px;
+    transition: 0.5s;
+  }
+
+  .section-item:nth-child(4){
+      margin-right: 0;
+  }
+
+  .section-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 282px;
+    padding: 24px 0;
+  }
+
+  .byline {
+    line-height: 24px;
+    text-align: center;
+    margin: 24px 0;
+  }
+
+  .section-item .item-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid var(--blue);
+  }
+
+  .section-item:hover {
+    background-color: var(--lightgray);
+  }
+  
+  .section-item:hover .item-link a{
+    background-color: var(--blue);
+    color: #fff;
+  }
+
+  .item-link a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c1";
+    margin-right: 10px;
+  }
+
+  .item-link a {
+    text-decoration: none;
+    color: var(--blue);
+    padding: 16px 24px;
+    transition: 0.5s;
+    font-size: 1.12rem;
+    line-height: 27px;
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+
+  /* Media Queries */
+
+  @media only screen and (max-width: 1440px) {
+    nav{
+      margin: 48px 25px 0 25px;
+    }
+
+    .section-item {
+      position: relative;
+    }
+
+    .byline {
+      margin-bottom: 61px;
+    }
+
+    .section-item .item-link {
+      position: absolute;
+      width: 95%;
+      bottom: 10%;
+    }
+  
+    .section-item .item-link a {
+      width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+  nav {
+    background-color: var(--blue);
+    margin: 0;
+    position: relative;
+  }
+  .navbar-toggler{
+    display: block;
+  }
+
+  .show {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    z-index: 10;
+    margin: 0;
+    width: 50%;
+    box-shadow: 3px 3px 15px var(--gray);
+  }
+
+  .nav-links li {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--lightgray);
+  }
+
+  .nav-links a {
+    background-color: #fff;
+    padding: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links a:hover {
+    background-color: var(--blue);
+    color: #fff;
+  }
+
+  .dropdown img {
+    margin: 0;
+  }
+
+  .drop-button {
+    color: #fff;
+    padding-left: 8px;
+  }
+
+  .lorem {
+    display: none;
+  }
+
+}
+
+  @media only screen and (max-width: 1024px) {
+    .section-item {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 25%;
+      margin-right: 0;
+    }
+
+    .row .section-item:last-of-type{
+      display: none;
+    }
+
+    .item-content{
+      padding: 0 0 59px 0;
+    }
+
+    .byline {
+      margin: 0;
+      padding: 24px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    nav {
+      position: fixed;
+      z-index: 11;
+      top: 0;
+      width: 100%;
+    }
+
+    .brand .logo {
+      height: 72px;
+      width: 72px;
+    }
+
+    .nav-button {
+      display: none;
+    }
+
+    .nav-links {
+      width: 100%;
+    }
+
+    section {
+      margin-top: 131px;
+    }
+
+    .row:first-of-type {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .section-item {
+      margin-bottom: 24px;
+      height: auto;
+    }
+
+    .top .section-item:last-of-type {
+      display: flex;
+      margin-bottom: 0;
+    }
+
+    .item-content {
+      width: 100%;
+      padding: 0;
+    }
+
+    .section-item .item-link{
+      position: static;
+      width: auto;
+    }
+
+    /* The icon I used for the link is a few pixels bigger than the one in the mockup, so I had to take off a little margin here. */
+    .item-link::before {
+      margin-right: 6px;
+    }
+
+    .bottom {
+      display: none;
+    }
+  }
+  
